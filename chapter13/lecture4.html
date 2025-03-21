@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onclick Event Example</title>
+</head>
+<body>
+    <h1>Click Event Listeners: 2</h1>
+    <br>
+    <p>This example is based on the lecture3.html file where we used onclick
+        atrribute. In this example we will use addEventListener to raplace the 
+        text of the p element with id="output" to 'Next Text!!!'. Basically we 
+        will achieve the same functionality with event listeners.
+    </p>
+    <ul>
+        <li>1) These are the steps we need to do:</li>
+        <li>2) We need to delete the onclick attribute and function call from the button</li>
+        <li>3) We need to add any id on the button element so we can put event listener.</li>
+    </ul>
+
+    <button id='clickBtn'>Click me</button>
+    <br>
+    <p id="output">This text will be replaced</p>
+    <hr>
+    <hr>
+    <script>
+        
+            document.getElementById("clickBtn").addEventListener('click', ()=>{
+                document.getElementById("output").innerHTML = "New Text!!!";
+            })
+        
+    </script>
+</body>
+</html>
+</html>

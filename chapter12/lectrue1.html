@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Document Object Model methods</title>
+</head>
+<body>
+    <h1>Document Object Model Methods:</h1>
+    <ul>
+        <li><h3>document.write()</h3></li>
+        <li><h3>document.getElementById()</h3></li>
+        <li><h3>document.getElementsByName() - depreceated</h3></li>
+        <li><h3>document.getElementsByTagName()</h3></li>
+        <li><h3>document.getElementsByClassName()</h3></li>
+        <li><h3>document.querySelector()</h3></li>
+    </ul>
+    <p id='first'>This paragraph is for getElementById().</p>
+
+    <form action="#">
+        First Name: <input name="fname" type="text" value="Tom"><br>
+        Last Name: <input name="fname" type="text" value="Jones">
+    </form>
+
+    <div class="header">First div element with class="header".</div>
+    <div class="header">Second div element with class="header".</div>
+    <div class="header">Third div element with class="header".</div>
+    <div class='myclass'>Testing the document.querySelector() method with class attribute! </div>
+    <div id='myclass'>Testing the document.querySelector() method with id attribute! </div>
+    <script src="./domMethods.js"></script>
+</body>
+</html>

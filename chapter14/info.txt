@@ -1,0 +1,1 @@
+This text is coming from a txt file called info.txt!

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX</title>
+</head>
+<body>
+    <h1>AJAX simple example!</h1>
+    <p id="text">Let us change the text of this paragraph by clicking the button bellow!</p>
+    <button id="changeText">Change Text!</button>
+
+    <script>
+         const output = document.querySelector('#text');
+        const btn = document.querySelector('#changeText');
+        btn.addEventListener('click',()=>{
+            loadData();
+        });
+
+        const loadData = () =>{
+            const req = new XMLHttpRequest();
+            req.open('GET','info.txt',true);
+            req.send();
+            req.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    output.innerHTML = this.responseText;
+                }
+            };
+           
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onclick Event Example</title>
+</head>
+<body>
+    <h1>Onclick Event Example 1</h1>
+    <br>
+    <p>With the onclick event we can trigger a function when an HTML5 element is clicked.</p>
+
+    <p>For example, if we click the button bellow we will trigger a function that will place new content "New Text!!!" in the p element with id="output".
+        <br>
+        In order to create this functionality we need to add onlick attribute to the HTML5 element 'button'
+    </p>
+    <hr>
+
+    <button onclick="changeText()">Click me</button>
+    <br>
+    <p id="output">This text will be replaced</p>
+    <hr>
+    <hr>
+    
+    <script>
+        function changeText() {
+            document.getElementById("output").innerHTML = "New Text!!!";
+        }
+    </script>
+</body>
+</html>
+</html>

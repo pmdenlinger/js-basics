@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handler</title>
+</head>
+<body>
+    <p>Today Date Should Goes Here: format dd/mm/yyyy </p>
+    <p id="todayDate"></p>
+    <br>
+    <p id="clickBtn" style="background-color: blue; color: white; font-size: 26px;">click me to transform.</p>
+    <p id="output">....</p>
+    <br/>
+
+    <script>
+        //Format the date
+        let date = new Date();
+        const currentYear = date.getFullYear();
+        const today = date.getDate();
+        const currentMonth = date.getMonth()+1;
+        const myDate = today +'/'+ currentMonth +'/'+ currentYear;
+        //display the date
+        document.getElementById('todayDate').innerHTML = myDate;
+        //When clicked the clickBtn display back text in the p tag with output id
+        document.getElementById('clickBtn').addEventListener('click',()=>{
+            document.getElementById('output').innerHTML = 'You Have Clicked the Btn';
+        });
+
+    </script>
+</body>
+</html>
