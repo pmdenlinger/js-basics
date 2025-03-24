@@ -22,6 +22,7 @@ function add() {
     number: enteredNumber,
     result: currentResult,
   };
+  console.log(logEntry.operation);
   logEntries.push(logEntry);
     console.log(logEntries);
 }
