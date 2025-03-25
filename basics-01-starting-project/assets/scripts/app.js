@@ -31,6 +31,7 @@ function calculateResult(calculationType) {
     ) {
         return;
     }
+    
   const enteredNumber = getUserNumberInput();
   const initialResult = currentResult;
   let mathOperator;
